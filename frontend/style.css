@@ -1,0 +1,44 @@
+body {
+    background: #0b0e1a;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    background: #111;
+    padding: 10px;
+}
+
+.tabs button {
+    padding: 10px;
+    background: #1d1f2b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.tab {
+    display: none;
+    padding: 20px;
+}
+
+#music-list div {
+    background: #1a2033;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
