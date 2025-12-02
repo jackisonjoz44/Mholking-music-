@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mholking Music</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+    <img src="logo.png" class="logo" alt="Mholking Music">
+    <h1>Mholking Music</h1>
+</div>
+
+<div class="tabs">
+    <button onclick="showTab('home')">Home</button>
+    <button onclick="showTab('upload')">Upload</button>
+    <button onclick="showTab('boost')">Boost</button>
+    <button onclick="showTab('referral')">Referral</button>
+    <button onclick="showTab('profile')">Profile</button>
+</div>
+
+<div id="content">
+
+    <section id="home" class="tab">
+        <h2>Trending Music</h2>
+        <div id="music-list"></div>
+    </section>
+
+    <section id="upload" class="tab">
+        <h2>Upload Your Music</h2>
+        <input type="file" id="musicFile">
+        <button onclick="uploadMusic()">Upload</button>
+        <p id="uploadStatus"></p>
+    </section>
+
+    <section id="boost" class="tab">
+        <h2>Boost Your Song</h2>
+        <p>Boost price: <b>5,000 UGX</b> for 48 hours</p>
+        <input type="text" id="boostSongId" placeholder="Song ID">
+        <button onclick="boostSong()">Boost Now</button>
+        <p id="boostStatus"></p>
+    </section>
+
+    <section id="referral" class="tab">
+        <h2>Referral System</h2>
+        <p>Share your link and earn a <b>FREE 2-hour boost</b></p>
+        <input type="text" id="refLink" readonly>
+        <button onclick="copyRefLink()">Copy Link</button>
+        <p id="refStatus"></p>
+    </section>
+
+    <section id="profile" class="tab">
+        <h2>Your Profile</h2>
+        <p id="userInfo"></p>
+    </section>
+
+</div>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
